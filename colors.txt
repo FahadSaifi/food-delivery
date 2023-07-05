@@ -1,0 +1,2 @@
+primary-color:#C00A27;
+secondary-color: #FFCC00;
