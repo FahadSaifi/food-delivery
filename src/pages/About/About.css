@@ -1,0 +1,84 @@
+.about-section-wrapper {
+    display: flex;
+    align-items: center;
+    height: 40vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images//about.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about-us-heading {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.about-us-description {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    max-width: 800px;
+    margin-top: 10px;
+}
+
+.about-us-info-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.about-info-left,
+.about-info-right {
+    width: 48%
+}
+
+.about-info-img {
+    width: 100%;
+    display: block;
+}
+
+.about-info-description {
+    font-size: 15px;
+    color: silver;
+    margin-top: 20px;
+}
+
+.our-staff-heading {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+.our-staff-heading::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.staff-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+
+.staff-card {
+    padding: 10px;
+    background: #f5f5f5;
+}
+
+.staff-card-img {
+    width: 100%;
+}
+
+.staff-card-title,
+.staff-card-status {
+    font-weight: 500;
+    text-align: center;
+}

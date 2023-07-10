@@ -1,0 +1,135 @@
+.testimonial-wrapper {
+    margin-top: 40px;
+}
+
+.testimonial-heading {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.testimonial-heading::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6rem;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+
+.testimonial-slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.testimonial-slider {
+    width: 50%;
+}
+
+.testimonial-banner {
+    width: 45%;
+}
+
+.testimonial-banner-img {
+    width: 100%;
+}
+
+.testimonial-img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swiper-button-prev {
+    display: inline-block;
+    position: unset;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 30px);
+    transform: translateX(-50%);
+    z-index: 100;
+    cursor: pointer;
+    color: #fff;
+}
+
+.swiper-button-next {
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    right: calc(50% - 30px);
+    transform: translateX(50%);
+    z-index: 1000;
+    cursor: pointer;
+    color: #fff;
+}
+
+.swiper-button-next::after {
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-prev::after {
+    content: '\f060';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-wrapper {
+    height: 390px;
+}
+
+.customer-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 10px;
+}
+
+.rating-star {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    color: orange;
+}
+
+.testimonial-rating {
+    font-size: 14px;
+    font-weight: 400;
+    color: silver;
+    margin-top: 5px;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {useState} from "react";
 import {NavLink} from "react-router-dom";
 import {Headerdata} from "../../data/Headerdata";
@@ -12,7 +12,16 @@ import "./Header.css";
 const Header = () => {
   // -----------All states related to Navbar-----------
   const [mobileNav, setMobileNav] = useState(false);
+  const [fixedNav, setFixedNav] = useState(false);
 
+  // Fixed navbar logic
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 0) {
+      setFixedNav(true);
+    } else {
+      setFixedNav(false);
+    }
+  });
   return (
     <>
       <div className="top-header">
@@ -29,7 +38,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <nav className="navbar">
+      <nav className={fixedNav ? "navbar active" : "navbar"}>
         <div className="container">
           <div className="nav-flex-wrapper">
             <div className="logo-wrapper">

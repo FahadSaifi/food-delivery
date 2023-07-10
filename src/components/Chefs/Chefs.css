@@ -1,0 +1,45 @@
+.chefs-section-wrapper {
+    margin-top: 50px;
+}
+
+.our-chefs-heading {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+.our-chefs-heading::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.chefs-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+
+.chef-card {
+    border: 2px solid var(--primary-color);
+}
+
+.chef-img {
+    width: 100%;
+    background: var(--primary-color);
+}
+
+.chef-name {
+    text-align: center;
+}
+
+.chef-status {
+    text-align: center;
+}

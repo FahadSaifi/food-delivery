@@ -1,0 +1,21 @@
+.deals-section-heading {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+.deals-section-heading::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.deals-carousel-wrapper {
+    margin-top: 60px;
+}
