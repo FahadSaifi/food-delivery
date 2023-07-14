@@ -51,7 +51,7 @@ const About = () => {
           <div className="staff-cards-wrapper">
             {staffData.map(elm => {
               return (
-                <div className="staff-card">
+                <div className="staff-card" key={elm.id}>
                   <img src={elm.img} alt="staff" className="staff-card-img" />
                   <h3 className="staff-card-title">{elm.name}</h3>
                   <h3 className="staff-card-status">{elm.responibility}</h3>

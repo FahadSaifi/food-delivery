@@ -1,0 +1,33 @@
+.our-menu-heading {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+.our-menu-heading::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.foods {
+    margin-top: 50px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .our-menu-heading {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .our-menu-heading {
+        font-size: 24px;
+    }
+}

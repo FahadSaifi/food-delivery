@@ -73,3 +73,50 @@
     background-position: top;
     z-index: 98;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .hero-section-wave {
+        height: 80px;
+        bottom: -15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-section-wave {
+        bottom: -15px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .hero-intro-tagline {
+        font-size: 15px;
+    }
+
+    .hero-heading {
+        font-size: 40px;
+        margin-top: 26px;
+    }
+
+    .hero-tagline {
+        font-size: 24px;
+    }
+
+    .hero-section-wave {
+        bottom: -15px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 575px) {
+    .hero-heading {
+        font-size: 30px;
+        line-height: unset;
+    }
+
+    .hero-tagline {
+        font-size: 24px;
+    }
+
+    .hero-section-wave {
+        bottom: -15px;
+    }
+}

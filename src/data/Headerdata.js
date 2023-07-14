@@ -12,7 +12,7 @@ export const Headerdata = [
   {
     id: 3,
     url: "/menu",
-    link: "Foods",
+    link: "Menu",
   },
   {
     id: 4,

@@ -133,3 +133,53 @@
     color: silver;
     margin-top: 5px;
 }
+
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+    .testimonial-heading {
+        font-size: 26px;
+    }
+
+    .testimonial-banner {
+        display: none;
+    }
+
+    .testimonial-slider {
+        width: 100%;
+        text-align: center;
+    }
+
+    .rating-star {
+        display: flex;
+        justify-content: center;
+    }
+
+    .testimonial-img {
+        display: inline-block;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 575px) {
+    .testimonial-heading {
+        font-size: 24px;
+    }
+
+    .testimonial-banner {
+        display: none;
+    }
+
+    .testimonial-slider {
+        width: 100%;
+        text-align: center;
+    }
+
+    .rating-star {
+        display: flex;
+        justify-content: center;
+    }
+
+    .testimonial-img {
+        display: inline-block;
+        margin: 0 auto;
+    }
+}

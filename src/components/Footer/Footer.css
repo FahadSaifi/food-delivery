@@ -90,3 +90,39 @@
     font-weight: 400;
     text-align: center;
 }
+
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+    .input-field {
+        padding: 6px;
+        width: 250px;
+    }
+
+    .newsletter-input {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 575px) {
+    .input-field {
+        padding: 6px;
+        width: 250px;
+    }
+
+    .newsletter-input {
+        padding: 0 10px;
+    }
+
+    .footer-newsletter {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .footer-bottom-section {
+        height: auto;
+    }
+}

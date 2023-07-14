@@ -82,3 +82,94 @@
     font-weight: 500;
     text-align: center;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about-us-info-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-info-left,
+    .about-info-right {
+        width: 100%;
+    }
+
+    .about-info-img {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .about-us-info-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-info-left,
+    .about-info-right {
+        width: 100%;
+    }
+
+    .about-info-img {
+        margin-top: 30px;
+    }
+
+    .about-us-heading {
+        font-size: 30px;
+    }
+
+    .about-us-description {
+        font-size: 14px;
+    }
+
+    .staff-cards-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .about-us-info-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-info-left,
+    .about-info-right {
+        width: 100%;
+    }
+
+    .about-info-img {
+        margin-top: 20px;
+    }
+
+    .staff-cards-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .staff-card-title {
+        font-size: 15px;
+    }
+
+    .staff-card-status {
+        font-size: 16px;
+    }
+
+    .about-us-heading {
+        font-size: 28px;
+    }
+
+    .about-us-description {
+        font-size: 13px;
+    }
+
+    .about-info-heading {
+        font-size: 20px;
+    }
+
+    .about-info-description {
+        font-size: 13px;
+    }
+}

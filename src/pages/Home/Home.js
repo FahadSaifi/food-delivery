@@ -4,7 +4,6 @@ import "./Home.css";
 import Deals from "../../components/Deals/Deals";
 import Howworks from "../../components/Works/Howworks";
 import Testimonial from "../../components/Testimonial/Testimonial";
-import Chefs from "../../components/Chefs/Chefs";
 
 const Home = () => {
   return (
@@ -32,9 +31,7 @@ const Home = () => {
       </div>
       {/* ---------Hero section ends---------- */}
       <Menu />
-      <div className="container">
-        <Deals />
-      </div>
+      <Deals />
       <Howworks />
       <Testimonial />
     </>

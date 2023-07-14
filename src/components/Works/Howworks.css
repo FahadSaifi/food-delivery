@@ -58,3 +58,33 @@
     color: silver;
     margin-top: 8px;
 }
+
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+    .how-work-card-img {
+        width: 90px;
+    }
+
+    .how-work-card-title {
+        font-size: 15px;
+    }
+
+    .how-work-card-desc {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 575px) {
+    .howworks-heading {
+        font-size: 24px;
+    }
+
+    .how-works-cards-background {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .how-works-cards-background .how-works-card:nth-child(1),
+    .how-works-cards-background .how-works-card:nth-child(2) {
+        border-bottom: 2px solid #f5f5f5;
+    }
+}
