@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./Food.css";
 import {menu} from "../../data/Fooddata";
+import {Itemcontext} from "../../context/context";
 
 const Food = () => {
+  const {handleCartItems} = useContext(Itemcontext);
   return (
     <>
       <div className="food-section-wrapper">
@@ -15,7 +17,12 @@ const Food = () => {
               <div className="food-right">
                 <h4 className="food-name">{elm.foodName}</h4>
                 <p className="food-price">&#8377; {elm.foodPrice}</p>
-                <button className="add-cart-btn">Add to cart</button>
+                <button
+                  className="add-cart-btn"
+                  onClick={() => handleCartItems(elm)}
+                >
+                  Add to cart
+                </button>
               </div>
             </div>
           );

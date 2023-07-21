@@ -103,6 +103,10 @@
     display: block;
 }
 
+.search {
+    position: relative;
+}
+
 .auth-btn {
     width: 100px;
     height: 36px;
@@ -179,6 +183,7 @@
 .auth-btn.ab {
     display: none;
 }
+
 
 /* ----------Bottom header styling ends---------- */
 
